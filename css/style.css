@@ -58,14 +58,14 @@ nav .right-contact-text p{
 
 /* global styling */
 .container{
-    height: 80%;
+    min-height: 80%;
     width: 80%;
     display: flex;
 }
 
 .parent {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -171,6 +171,7 @@ main .container .main-right-image{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    height: 70vh;
 }
 
 main .container .main-right-image .service{
@@ -192,9 +193,7 @@ main .container .main-right-image .rating{
 
 
 .left-service .left-service-left{
-    /* padding: 100px; */
     margin: 20px;
-    /* background-color: blue; */
 }
 
 .right h1{
@@ -252,7 +251,6 @@ input {
 }
 
 #offer .content{
-    width: 100%;
     text-align: center;
 }
 
@@ -349,4 +347,98 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+.footer-bg{
+    background-color: black;
+}
+
+
+/* for mobile */
+@media screen and (max-width: 425px) {
+header {
+    position: static;
+}
+    #header .container{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+   
+    header h1{
+        font-size: 18px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        column-gap: 20px;
+        border: none;
+    }
+
+    nav ul li {
+        font-size: 15px;
+    }
+    
+
+   .container {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0 10px;
+   }
+
+   .left {
+    width: 100%;
+   }
+
+   .right {
+    width: 100%;
+   }
+
+   main .container .main-left{
+    padding-left: 50px;
+    text-align: center;
+   }
+
+   main .container .main-left h1 {
+    font-size: 30px;
+    }
+
+   main .container .main-right-image {
+    height: 50vh;
+    }
+
+    .main-right-image .service {
+      left: -15px;
+   }
+
+   .main-right-image .rating {
+        right: -15px;
+    }
+
+    
+    #offer .content .offer-card .card{
+        height: 220px;
+        width: 220px;
+    }
+
+    #query .top-box{
+        display: block;
+        width:160vh;
+    }
+
+    #query .below-box {
+        height: auto;
+        padding-top: 400px;
+    }
+    
+      
+}
+
+/* for tablet */
+@media screen and (max-width: 850px) {
+    
 }
