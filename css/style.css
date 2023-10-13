@@ -419,29 +419,148 @@ header {
         right: -15px;
     }
 
-    
-    #offer .content .offer-card .card{
-        height: 220px;
-        width: 220px;
-    }
+
+#offer .content .offer-card .card{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    padding-bottom: 150px;
+    padding-right: 115px;
+  }
+
+  #offer .content .offer-card {
+    padding-bottom: 10px;
+}
 
     #query .top-box{
         display: block;
-        width:160vh;
+        width:92vh;
     }
 
-    #query .below-box {
-        height: auto;
-        padding-top: 400px;
+    #query .below-box .container{
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 900px;
+        gap: 40px;
     }
-    
+
     #query .content h1 {
         font-size: 30px;
+    }
+
+    #query .below-box .container h1{
+        font-size: 20px;
+    }   
+
+    #query .below-box .container p{
+        font-size: 15px;
+        padding-bottom: 40px;
+        margin-left: -5px;
     }
       
 }
 
 /* for tablet */
 @media screen and (max-width: 850px) {
+    header {
+    position: static;
+}
+    #header .container{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+   
+    header h1{
+        font-size: 18px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        column-gap: 20px;
+        border: none;
+    }
+
+    nav ul li {
+        font-size: 15px;
+    }
+    
+
+   .container {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0 10px;
+   }
+
+   .left {
+    width: 100%;
+   }
+
+   .right {
+    width: 100%;
+   }
+
+   main .container .main-left{
+    padding-left: 50px;
+    text-align: center;
+   }
+
+   main .container .main-left h1 {
+    font-size: 30px;
+    }
+
+   main .container .main-right-image {
+    height: 50vh;
+    }
+
+    .main-right-image .service {
+      left: -15px;
+   }
+
+   .main-right-image .rating {
+        right: -15px;
+    }
+
+
+#offer .content .offer-card .card{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    padding-bottom: 150px;
+    padding-right: 115px;
+  }
+
+  #offer .content .offer-card {
+    padding-bottom: 10px;
+}
+
+    #query .top-box{
+        display: block;
+        width:92vh;
+    }
+
+    #query .below-box .container{
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 1200px;
+        gap: 40px;
+    }
+
+    #query .content h1 {
+        font-size: 30px;
+    }
+
+    #query .below-box .container h1{
+        font-size: 20px;
+    }   
+
+    #query .below-box .container p{
+        font-size: 15px;
+        padding-bottom: 40px;
+        margin-left: -5px;
+    }
     
 }
